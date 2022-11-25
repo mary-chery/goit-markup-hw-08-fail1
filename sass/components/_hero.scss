@@ -1,0 +1,116 @@
+// .bcg-hero {
+//     max-width: 1600px;
+//     height: 600px;
+//     margin-left: auto;
+//     margin-right: auto;
+
+//     background-image: linear-gradient(to right,
+//             rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/Img-bcg.jpg);
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+
+.bcg-hero {
+    text-align: center;
+
+    padding-bottom: 118px;
+
+    height: 400px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--bgc-temporary-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/bcg-img-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/bcg-img-mobile@2x.jpg');
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/bcg-img-tablet.jpg');
+
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/bcg-img-tablet@2x.jpg');
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 118px;
+        // padding-top: 200px;
+        // padding-bottom: 200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/bcg-img-desk.jpg');
+        height: 600px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/bcg-img-desk@2x.jpg');
+        }
+    }
+}
+
+.hero {
+    text-align: center;
+    // padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.main-hero__title {
+    /* margin-top: 0;
+    margin-bottom: 30;
+     */
+    // width: 697px;
+    // text-align: center;
+    margin: auto;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+
+    @media screen and (min-width:767px) {
+        width: 360px;
+    }
+
+        @media screen and (min-width:1200px) {
+            font-size: 44px;
+            width: 700px;
+        }
+
+}
+
+.main-hero__btn {
+    display: inline-block;
+    border-radius: 4px;
+    min-width: 216px;
+    height: 50px;
+    margin-top: 30px;
+
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
